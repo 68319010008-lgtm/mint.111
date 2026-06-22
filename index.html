@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์ตัวอย่าง</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* ===== เมนูด้านบน ===== */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:linear-gradient(90deg,#007bff,#00c6ff);
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin:0 10px;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 20px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    background:rgba(255,255,255,0.2);
+    border-radius:5px;
+}
+
+/* ===== เนื้อหา ===== */
+.content{
+    padding-top:90px;
+    min-height:100vh;
+    text-align:center;
+    background:#f4f6f9;
+}
+
+.hero{
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#007bff;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#555;
+}
+
+/* ===== Footer ===== */
+.footer{
+    background:#222;
+    color:white;
+    padding:40px 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-section{
+    flex:1;
+    min-width:250px;
+}
+
+.footer-section h3{
+    margin-bottom:15px;
+    color:#00c6ff;
+}
+
+.footer-section p,
+.footer-section a{
+    color:#ddd;
+    text-decoration:none;
+    line-height:1.8;
+}
+
+.footer-menu{
+    list-style:none;
+}
+
+.footer-menu li{
+    margin-bottom:8px;
+}
+
+.footer-menu a{
+    transition:0.3s;
+}
+
+.footer-menu a:hover{
+    color:#00c6ff;
+    padding-left:8px;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #444;
+    margin-top:25px;
+    padding-top:15px;
+    color:#aaa;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- เมนูด้านบน -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">บริการ</a></li>
+            <li><a href="#">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- เนื้อหา -->
+<section class="content">
+    <div class="hero">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์</h1>
+        <p>ตัวอย่างเว็บไซต์ที่มีเมนูติดด้านบน และ Footer แบบ Responsive</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>เกี่ยวกับหน่วยงาน</h3>
+            <p>
+                หน่วยงานของเราให้บริการข้อมูล ข่าวสาร
+                และสนับสนุนการดำเนินงานด้านเทคโนโลยีสารสนเทศ
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>เมนูเว็บไซต์</h3>
+            <ul class="footer-menu">
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">บริการ</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>ช่องทางการติดต่อ</h3>
+            <p>📍 วิทยาลัยเทคนิคสว่างแดนดิน</p>
+            <p>📞 042-000-000</p>
+            <p>✉️ info@college.ac.th</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 เว็บไซต์ตัวอย่าง | All Rights Reserved
+    </div>
+
+</footer>
+
+</body>
+</html>
